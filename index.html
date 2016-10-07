@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="description" content="A terminal-like, incremental-ish game. Under construction.">
+    <meta name="author" content="Koen Missault">
+
+    <title>Cash.cmd</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <style id="customStyle"></style>
+</head>
+<body>
+    <div id="container">
+        <div id="terminal">
+            <div id="topBar"></div>
+        </div>
+    </div>
+</body>
+<script data-main="assets/js/config" src="assets/js/lib/require.js"></script>
+<script>
+    require(["config"], function(){
+        require(["game/main"]);
+    })
+</script>
+</html>
